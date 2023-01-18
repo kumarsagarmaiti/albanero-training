@@ -116,3 +116,15 @@ def fib(n: int):
     return fib_cache[n]
 
 print(fib(15))
+
+a1=[1,2,3]
+a2=[4,5,6]
+a1.extend(a2)
+print(a1[0:len(a1)]+a2)
+# *args
+# **keywords
+
+def some(a:int,b:int):
+    return a+b
+
+print(some('a','b')) 
