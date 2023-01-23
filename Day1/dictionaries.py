@@ -28,9 +28,9 @@ dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 dict(sape=4139, guido=4127, jack=4098)
 # {'sape': 4139, 'guido': 4127, 'jack': 4098}
 
-my_map={
- 1:2,
- 10:2,
- 5:3
+my_map = {
+    1: 2,
+    10: 2,
+    5: 3
 }
 print(my_map)

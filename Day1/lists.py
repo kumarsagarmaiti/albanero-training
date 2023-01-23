@@ -53,13 +53,14 @@ vec = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 [num for elem in vec for num in elem]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# matrix = [
-#     [1, 2, 3, 4],
-#     [5, 6, 7, 8],
-#     [9, 10, 11, 12],
-# ]
-
-# print([[row[i] for row in matrix] for i in range(4)])
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+# new=[[row[i] for row in matrix] for i in range(4)]
+new=[[row[i] for i in range(4) ] for row in matrix]
+print(new)
 
 # There is a way to remove an item from a list given its index instead of its value: the del statement. This differs from the pop() method which returns a value. The del statement can also be used to remove slices from a list or clear the entire list.
 a = [-1, 1, 66.25, 333, 333, 1234.5]
