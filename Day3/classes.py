@@ -98,33 +98,33 @@ x = MyClass(9)
 print(x.showVal())
 
 
-class Dog:
+# class Dog:
 
-    kind = 'canine'         # class variable shared by all instances
+#     kind = 'canine'         # class variable shared by all instances
 
-    def __init__(self, name):
-        self.name = name    # instance variable unique to each instance
+#     def __init__(self, name):
+#         self.name = name    # instance variable unique to each instance
 
 
-d = Dog('Fido')
-e = Dog('Buddy')
-print(d.kind)                  # shared by all dogs
-print(e.kind)                  # shared by all dogs
-print(d.name)                  # unique to d
-print(e.name)                  # unique to e
+# d = Dog('Fido')
+# e = Dog('Buddy')
+# print(d.kind)                  # shared by all dogs
+# print(e.kind)                  # shared by all dogs
+# print(d.name)                  # unique to d
+# print(e.name)                  # unique to e
 # The class variable should be immutable or it will be shared by all class instances. For example:
 
 
-class Dog:
+# class Dog:
 
-    # tricks = []             # mistaken use of a class variable
+#     # tricks = []             # mistaken use of a class variable
 
-    def __init__(self, name):
-        self.name = name
-        self.tricks = []  # correct way is to use instance variable
+#     def __init__(self, name):
+#         self.name = name
+#         self.tricks = []  # correct way is to use instance variable
 
-    def add_trick(self, trick):
-        self.tricks.append(trick)
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
 
 
 # In methods the instance object is passed as the first argument of the method. So method can be stored in a variable and called later. In general, calling a method with a list of n arguments is equivalent to calling the corresponding function with an argument list that is created by inserting the method’s instance object before the first argument.
@@ -133,11 +133,11 @@ xf = x.f
 
 print(xf())
 
-d = Dog('Fido')
-e = Dog('Buddy')
-d.add_trick('roll over')
-e.add_trick('play dead')
-print(d.tricks)                # unexpectedly shared by all dogs
+# d = Dog('Fido')
+# e = Dog('Buddy')
+# d.add_trick('roll over')
+# e.add_trick('play dead')
+# print(d.tricks)                # unexpectedly shared by all dogs
 
 # Data attributes overide the method attributes if both have the same name.
 print(os.getcwd())
